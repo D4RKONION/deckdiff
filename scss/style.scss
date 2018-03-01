@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web|Roboto|Open+Sans);
+
+$darkBlue: #395669;
+$blue: #4b8ebb;
+
+$mobile: 544px;
+$medium: 1100px;
+$large: 1400px;
+
+* {	
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:none;
+	outline: 0;
+	font-style: normal;
+	border: none;
+}
+body {
+    height: auto;
+    font-family: "Open Sans";
+    font-size: 17px;
+    color: #000;
+	min-width: 320px;
+	background-color: $darkBlue;
+	color: #fff;
+}
+
+header {
+	margin-bottom: 1%;
+	padding: 10px;
+	background-color: $blue;
+	a {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		text-decoration: none;
+
+
+	}
+	h1 {
+		text-align: center;
+		font-size: 48px;
+	}
+	.link-list {
+		position: absolute;
+		left: 20px;
+	}
+
+}
+#appspace {
+	width: 90%;
+	margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+	    
+    h3 {
+    	text-align: center;
+    }
+
+
+
+    #deckOneFlex, #diffFlex, #deckTwoFlex {
+    	order: 0;
+    	flex: 1 1 auto;
+    	align-self: auto;
+    	margin: 0 1%;
+	    .flexHeader {
+			text-align: center;
+		}
+    }
+	
+
+	textarea {
+		resize: none;
+		width: 100%;
+		padding: 8px 15px;
+		box-sizing: border-box;
+		height: 95%;
+		font-family: "Open Sans";
+		font-size: 17px;
+		background: #ffffff33;
+		color: #fff;
+
+	}
+
+	#diffSpace {
+	    text-align: center;
+	}
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	
+	margin: 0 auto;
+	text-align: center;
+}

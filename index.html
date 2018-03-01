@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>DeckDiff</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-42633839-1', 'fullmeter.com');
+		ga('send', 'pageview');
+
+	</script>
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<header>
+		
+		
+		<span class="link-list">
+			<a href='https://fullmeter.com'><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+			<a href='https://twitter.com/D4RK_ONION'><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+			<a href='https://github.com/D4RKONION/fatsfvframedatajson'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+			<p>Ver 0.0.1</p>
+		</span>
+		<h1>deckDiff</h1>
+	</header>
+	<div id="appspace">
+		<div id="deckOneFlex">
+			<h1 class="flexHeader">Old Deck</h1>
+			<textarea id="deckOneTextArea">4 Aether Hub
+2 Aethersphere Harvester
+4 Blooming Marsh
+2 Blossoming Defense
+3 Fatal Push
+4 Forest
+3 Foul Orchard
+4 Glint-Sleeve Siphoner
+2 Hashep Oasis
+2 Ifnir Deadlands
+3 Jadelight Ranger
+4 Merfolk Branchwalker
+3 Ravenous Chupacabra
+2 Rishkar, Peema Renegade
+5 Swamp
+3 Verdurous Gearhulk
+2 Vraska's Contempt
+4 Walking Ballista
+4 Winding Constrictor
+
+2 Deathgorge Scavenger
+4 Duress
+1 Fatal Push
+2 Golden Demise
+2 Lifecrafter's Bestiary
+1 Naturalize
+1 Vraska's Contempt
+2 Vraska, Relic Seeker</textarea>
+		</div>
+		
+		<div id="diffFlex">
+			<h1 class="flexHeader"><i class="fa fa-long-arrow-right fa-2x"></i></h1>
+			<div id="differenceSpace">The difference</div>
+		</div>
+		<div id="deckTwoFlex">
+			<h1 class="flexHeader">New Deck</h1>
+			<textarea id="deckTwoTextArea">4 Aether Hub
+4 Blooming Marsh
+3 Blossoming Defense
+4 Botanical Sanctum
+4 Bristling Hydra
+2 Fatal Push
+3 Fetid Pools
+3 Forest
+2 Foul Orchard
+4 Glint-Sleeve Siphoner
+3 Hadana's Climb
+2 Hashep Oasis
+1 Ifnir Deadlands
+4 Jadelight Ranger
+4 Servant of the Conduit
+1 Swamp
+2 Verdurous Gearhulk
+2 Vraska's Contempt
+4 Walking Ballista
+4 Winding Constrictor
+
+2 Cartouche of Ambition
+3 Duress
+2 Fatal Push
+3 Negate
+3 Thrashing Brontodon
+2 Vraska's Contempt</textarea>
+		</div>
+		
+	</div>
+
+</body>
+</html>
