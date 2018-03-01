@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta property="og:title" content="deckDiff">
     <meta property="og:description" content="A small webapp for comparing MTG decks">
-    <meta property="og:image" content="https://fullmeter.com/fat-icon-square.png">
+    <meta property="og:image" content="https://fullmeter.com/deckdiff/img/deckdiffpromo.png">
     <meta property="og:url" content="https://fullmeter.com/deckdiff/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<script>
@@ -33,13 +33,17 @@
 			<a href='https://fullmeter.com'><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
 			<a href='https://twitter.com/D4RK_ONION'><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
 			<a href='https://github.com/D4RKONION/deckdiff'><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-			<p>Ver 0.0.1</p>
+			<p>Ver 0.0.2</p>
 		</span>
-		<h1>deckDiff</h1>
+		<h1>deck<span class="highlight">Diff</span></h1>
 	</header>
 	<div id="appspace">
 		<div id="deckOneFlex">
 			<h1 class="flexHeader">Old Deck</h1>
+			<div class="tappedOutArea">
+				<input id="tappedOutInputOne" placeholder="tappedout.net deck URL">
+				<button onclick="tappedOutFetcher(tappedOutInputOne.value, 'deckOne')">Get!</button>
+			</div>
 			<textarea id="deckOneTextArea">4 Aether Hub
 2 Aethersphere Harvester
 4 Blooming Marsh
@@ -76,6 +80,10 @@
 		</div>
 		<div id="deckTwoFlex">
 			<h1 class="flexHeader">New Deck</h1>
+			<div class="tappedOutArea">
+				<input id="tappedOutInputTwo" placeholder="tappedout.net deck URL">
+				<button onclick="tappedOutFetcher(tappedOutInputTwo.value, 'deckTwo')">Get!</button>
+			</div>
 			<textarea id="deckTwoTextArea">4 Aether Hub
 4 Blooming Marsh
 3 Blossoming Defense

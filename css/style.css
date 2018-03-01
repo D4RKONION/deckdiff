@@ -20,7 +20,10 @@ body {
 header {
   margin-bottom: 1%;
   padding: 10px;
-  background-color: #4b8ebb; }
+  background-color: #4b8ebb;
+  font-family: 'Titillium Web', sans-serif; }
+  header .highlight {
+    color: #395669; }
   header a {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -32,9 +35,12 @@ header {
     position: absolute;
     left: 20px; }
 
+.tappedout-hider {
+  display: none !important; }
+
 #appspace {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -47,9 +53,45 @@ header {
     order: 0;
     flex: 1 1 auto;
     align-self: auto;
-    margin: 0 1%; }
+    margin: 0 1%;
+    min-height: 552px; }
     #appspace #deckOneFlex .flexHeader, #appspace #diffFlex .flexHeader, #appspace #deckTwoFlex .flexHeader {
       text-align: center; }
+  #appspace .tappedOutArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 5px 0 10px; }
+    #appspace .tappedOutArea input, #appspace .tappedOutArea button {
+      order: 0;
+      flex: 1 1 auto;
+      align-self: auto;
+      font-size: 16px; }
+    #appspace .tappedOutArea input {
+      padding: 8px 15px;
+      background: #ffffff33;
+      color: #fff; }
+      #appspace .tappedOutArea input::placeholder {
+        color: #ccc; }
+      #appspace .tappedOutArea input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #ccc; }
+      #appspace .tappedOutArea input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #ccc; }
+      #appspace .tappedOutArea input::-ms-input-placeholder {
+        /* IE 10+ */
+        color: #ccc; }
+      #appspace .tappedOutArea input::-moz-placeholder {
+        /* Firefox 18- */
+        color: #ccc; }
+    #appspace .tappedOutArea button {
+      padding: 6px;
+      background: #4b8ebb;
+      color: #fff; }
   #appspace textarea {
     resize: none;
     width: 100%;

@@ -30,6 +30,10 @@ header {
 	margin-bottom: 1%;
 	padding: 10px;
 	background-color: $blue;
+	font-family: 'Titillium Web', sans-serif;
+	.highlight {
+		color: $darkBlue;
+	}
 	a {
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
@@ -47,9 +51,14 @@ header {
 	}
 
 }
+
+.tappedout-hider {
+	display: none !important;
+}
+
 #appspace {
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -62,17 +71,60 @@ header {
     }
 
 
-
     #deckOneFlex, #diffFlex, #deckTwoFlex {
     	order: 0;
     	flex: 1 1 auto;
     	align-self: auto;
     	margin: 0 1%;
+    	min-height: 552px;
 	    .flexHeader {
 			text-align: center;
 		}
     }
 	
+	.tappedOutArea {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: stretch;
+		align-items: stretch;	
+		margin: 5px 0 10px;
+
+		input, button {
+			order: 0;
+			flex: 1 1 auto;
+			align-self: auto;
+			font-size: 16px;
+		}
+		input {
+			padding: 8px 15px;
+			background: #ffffff33;
+			color: #fff;
+			&::placeholder {
+				color: #ccc;
+			}
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: #ccc;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: #ccc;
+			}
+			&::-ms-input-placeholder { /* IE 10+ */
+			  color: #ccc;
+			}
+			&::-moz-placeholder { /* Firefox 18- */
+			  color: #ccc;
+			}
+		}
+
+		button {
+			padding: 6px;
+			background: #4b8ebb;
+			color: #fff;
+		}
+	}
+    
 
 	textarea {
 		resize: none;
